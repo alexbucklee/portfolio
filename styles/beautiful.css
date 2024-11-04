@@ -1,0 +1,299 @@
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.body {
+    background-image: url("../images/bg-stars.png");
+}
+
+.hero__wrapper {
+    display: block;
+    text-align: center;
+}
+
+.hero__photo {
+    margin: 0 auto;
+    width: 300px;
+    height: 386px;
+    background-image: url("../images/beautiful/my-photo.png");
+}
+
+.hero__photo:hover {
+    transform: none;
+}
+
+.hero__photo-heart {
+    display: none;
+}
+
+.hero__name--beautiful {
+    display: block;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: white;
+    line-height: 1.4;
+}
+
+.hero__name {
+    display: none;
+}
+
+.hero {
+    padding-top: 140px;
+}
+
+.hero__description {
+    margin-top: 50px;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: yellow;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hero__role--beautiful {
+    display: block;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: yellow;
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.hero__jobs-item {
+    font-size: 20px;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: white;
+    font-weight: 600;
+}
+
+.portfolio__title {
+    display: none;
+}
+
+.portfolio__title--beautiful {
+    display: block;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.portfolio__works-image--beautiful {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.portfolio__works-image {
+    display: none;
+}
+
+.portfolio__works-title {
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.portfolio__works-description {
+    display: none;
+}
+
+.portfolio__works-list {
+    row-gap: 50px;
+}
+
+.tools {
+    display: block;
+    text-align: center;
+}
+
+.tools__title::before {
+    content: '';
+    display: block;
+    width: 298px;
+    height: 280px;
+    background-image: url("../images/beautiful/tools.png");
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tools__title {
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 100px;
+}
+
+.tools__list {
+    flex-direction: row;
+}
+
+.tools__item {
+    width: 400px;
+    height: 336px;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: yellow;
+    font-size: 40px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.tools__item::before {
+    content: '';
+    display: block;
+    background-image: url("../images/beautiful/tool-1.png");
+    width: 280px;
+    height: 280px;
+}
+
+.tools__item:nth-child(2)::before {    
+    background-image: url("../images/beautiful/tool-2.png");
+}
+
+.tools__item:nth-child(3)::before {    
+    background-image: url("../images/beautiful/tool-3.png");
+}
+
+.tools__item:nth-child(4)::before {    
+    background-image: url("../images/beautiful/tool-4.png");
+}
+
+.tools__item:nth-child(5)::before {    
+    background-image: url("../images/beautiful/tool-5.png");
+}
+
+.tools__item:nth-child(6)::before {    
+    background-image: url("../images/beautiful/tool-6.png");
+}
+
+.tools__col {
+    overflow: hidden;
+    column-gap: 0;
+}
+
+.tools__list {
+    animation: scroll 10s linear infinite;
+}
+
+.tools__list--beautiful {
+    display: flex;
+}
+
+.tools {
+    margin-bottom: 200px;
+}
+
+.tools__icon {
+    display: none!important;
+}
+
+.social-links {
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 0;
+}
+
+.social-links__link {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.social-links__link::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    position: absolute;
+    background-image: url("../images/beautiful/vk.png");
+    background-size: contain;
+}
+
+.social-links__item:nth-child(2) .social-links__link::before {
+    background-image: url("../images/beautiful/tg.png");
+}
+
+.header__toggle-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: white;
+}
+
+.header__toggle-icon {
+    background-image: url("../images/toggle-on.svg");
+}
+
+.header {
+    height: 90px;
+}
+
+@media (max-width: 720px) {
+    .hero__name--beautiful {
+        font-size: 50px;
+    }
+
+    .hero__role--beautiful {
+        font-size: 30px;
+    }
+
+    .hero__description {
+        font-size: 30px;
+    }
+
+    .portfolio__title--beautiful {
+        font-size: 50px;
+    }
+
+    .tools__title {
+        font-size: 50px;
+    }
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .header {
+        background-color: #1BA11C;
+    }
+
+    .social-links {
+        margin-left: 0;
+    }
+
+    .header__toggle-wrapper {
+        right: 24px;
+        top: 5px;
+    }
+
+    .social-links__link::before {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-links__link {
+        width: 50px;
+        height: 50px;
+    }
+}
